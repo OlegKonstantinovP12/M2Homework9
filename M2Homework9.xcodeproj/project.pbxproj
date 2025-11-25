@@ -14,7 +14,7 @@
 		7CF0F14E2ED64EFB0063F311 /* Exceptions for "M2Homework9" folder in "M2Homework9" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				App/Info.plist,
 			);
 			target = 7CF0F13B2ED64EFA0063F311 /* M2Homework9 */;
 		};
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VHF67AFR4G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = M2Homework9/Info.plist;
+				INFOPLIST_FILE = M2Homework9/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -183,7 +183,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VHF67AFR4G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = M2Homework9/Info.plist;
+				INFOPLIST_FILE = M2Homework9/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
