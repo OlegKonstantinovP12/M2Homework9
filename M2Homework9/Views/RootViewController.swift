@@ -13,8 +13,8 @@ class RootViewController: UIViewController {
     
     private lazy var layout: UICollectionViewFlowLayout = {
         $0.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-        
-        
+        $0.minimumLineSpacing = 10
+        $0.scrollDirection = .vertical
         return $0
     }(UICollectionViewFlowLayout())
 
@@ -23,11 +23,12 @@ class RootViewController: UIViewController {
         $0.dataSource = self
         return $0
     }(UICollectionView(frame: view.frame, collectionViewLayout: layout))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        view.addSubview(collectionView)
     }
-
 }
 
 extension RootViewController: UICollectionViewDataSource {
@@ -36,10 +37,8 @@ extension RootViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionCell.cellID, for: indexPath)
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionCell.cellID, for: indexPath) as! CollectionCell
+        cell.setupCell(item: postsData[indexPath.item])
         return cell
     }
-    
-    
 }
